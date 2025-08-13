@@ -22,9 +22,11 @@ import {
   Eye,
   Target
 } from 'lucide-react';
+import { supabase } from '../lib/supabase';
 
 export default function AscendiorWebsite() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
     nombre: '',
     email: '',
@@ -41,10 +43,43 @@ export default function AscendiorWebsite() {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log('Formulario enviado:', formData);
-    alert('¡Mensaje enviado correctamente!');
+    setIsSubmitting(true);
+
+    try {
+      const { data, error } = await supabase
+        .from('contact')
+        .insert([
+          {
+            nombrecompleto: formData.nombre,
+            email: formData.email,
+            telefono: formData.telefono,
+            empresa: formData.empresa || null,
+            servicio: formData.servicio,
+            mensaje: formData.mensaje
+          }
+        ]);
+
+      if (error) {
+        throw error;
+      }
+
+      alert('¡Mensaje enviado correctamente!');
+      setFormData({
+        nombre: '',
+        email: '',
+        telefono: '',
+        empresa: '',
+        servicio: '',
+        mensaje: ''
+      });
+    } catch (error) {
+      console.error('Error al enviar el formulario:', error);
+      alert('Error al enviar el mensaje. Por favor, inténtalo de nuevo.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -748,9 +783,10 @@ export default function AscendiorWebsite() {
 
                 <button
                   type="submit"
-                  className="w-full bg-emerald-600 text-white py-3 px-6 rounded-lg hover:bg-emerald-700 transition-colors font-semibold"
+                  disabled={isSubmitting}
+                  className="w-full bg-emerald-600 text-white py-3 px-6 rounded-lg hover:bg-emerald-700 transition-colors font-semibold disabled:bg-gray-400 disabled:cursor-not-allowed"
                 >
-                  Enviar Mensaje
+                  {isSubmitting ? 'Enviando...' : 'Enviar Mensaje'}
                 </button>
               </form>
             </div>
