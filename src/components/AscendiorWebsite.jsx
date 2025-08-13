@@ -98,9 +98,7 @@ export default function AscendiorWebsite() {
             Transformamos tu <span className="text-emerald-600">negocio</span> con tecnología
           </h2>
           <p className="text-lg text-gray-600 mb-6 max-w-3xl mx-auto">
-            Desarrollamos soluciones de software personalizadas que impulsan el 
-            crecimiento de tu empresa. Desde aplicaciones web hasta consultoría 
-            tecnológica, convertimos tus ideas en realidad digital.
+            Desarrollamos soluciones de software personalizadas que impulsan el crecimiento de tu empresa. Desde aplicaciones web hasta consultoría tecnológica, convertimos tus ideas en realidad digital. Además, contamos con herramientas ya desarrolladas para optimizar procesos clave como gestión de inventarios, atención al cliente y mucho más, adaptándolas a las necesidades de tu negocio.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-10">
@@ -255,10 +253,10 @@ export default function AscendiorWebsite() {
                 Creamos aplicaciones móviles y web a medida que se adaptan perfectamente a los procesos 
                 y necesidades específicas de tu empresa, garantizando una experiencia única para tus usuarios.
               </p>
-              <button className="text-emerald-600 font-semibold flex items-center space-x-2 hover:text-emerald-700">
+              <a href="#contacto" className="text-emerald-600 font-semibold flex items-center space-x-2 hover:text-emerald-700">
                 <span>Más Información</span>
                 <ArrowRight className="w-4 h-4" />
-              </button>
+              </a>
             </div>
           </div>
 
@@ -303,10 +301,10 @@ export default function AscendiorWebsite() {
               </div>
 
               <div className="flex justify-between items-center">
-                <button className="text-emerald-600 font-semibold flex items-center space-x-2 hover:text-emerald-700">
+                <a href="#contacto" className="text-emerald-600 font-semibold flex items-center space-x-2 hover:text-emerald-700">
                   <span>Más Información</span>
                   <ArrowRight className="w-4 h-4" />
-                </button>
+                </a>
                 <span className="text-sm text-gray-500">Desde 2 semanas</span>
               </div>
             </div>
