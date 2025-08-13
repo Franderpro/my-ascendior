@@ -103,17 +103,18 @@ export default function AscendiorWebsite() {
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-10">
             <button className="bg-emerald-600 text-white px-8 py-3 rounded-lg hover:bg-emerald-700 transition-colors">
-              Contáctanos Ahora
+              <a href="#contacto">Contáctanos Ahora</a>
+              
             </button>
             <button className="border border-gray-300 text-gray-700 px-8 py-3 rounded-lg hover:bg-gray-50 transition-colors">
-              Ver Servicios
+              <a href="#servicios">Ver Servicios</a>
             </button>
           </div>
 
           {/* Stats */}
           <div className="flex flex-col md:flex-row justify-around items-center text-center space-y-6 md:space-y-0">
             <div>
-              <div className="text-2xl font-bold text-emerald-600">50+</div>
+              <div className="text-2xl font-bold text-emerald-600">3+</div>
               <div className="text-sm text-gray-600">Proyectos Completados</div>
             </div>
             <div>
@@ -121,8 +122,8 @@ export default function AscendiorWebsite() {
               <div className="text-sm text-gray-600">Satisfacción del Cliente</div>
             </div>
             <div>
-              <div className="text-2xl font-bold text-emerald-600">24/7</div>
-              <div className="text-sm text-gray-600">Soporte Técnico</div>
+              <div className="text-2xl font-bold text-emerald-600">100%</div>
+              <div className="text-sm text-gray-600">Compromiso</div>
             </div>
           </div>
         </div>
@@ -228,8 +229,7 @@ export default function AscendiorWebsite() {
               Nuestros <span className="text-emerald-600">Servicios</span>
             </h3>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Ofrecemos soluciones tecnológicas integrales que cubren todas las necesidades de 
-              desarrollo y transformación digital de tu empresa.
+              Ofrecemos soluciones tecnológicas integrales que cubren todas las necesidades de desarrollo y transformación digital de tu empresa, con planes flexibles que se ajustan a tu presupuesto para que la innovación esté al alcance de todos.
             </p>
           </div>
 
@@ -259,7 +259,154 @@ export default function AscendiorWebsite() {
               </a>
             </div>
           </div>
+<div className="mb-12">
+            <div className="h-48 rounded-lg relative overflow-hidden">
+              <img 
+                src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" 
+                alt="Creación de páginas web" 
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute top-4 left-4 w-12 h-12 bg-emerald-500 rounded-lg flex items-center justify-center">
+                <Globe className="w-6 h-6 text-white" />
+              </div>
+            </div>
+            <div className="bg-white p-8 rounded-lg shadow-sm -mt-8 relative z-10 mx-4">
+              <h4 className="text-2xl font-bold text-gray-900 mb-4">
+                Creación de Páginas Web
+              </h4>
+              <p className="text-gray-600 mb-6">
+                Diseñamos y desarrollamos sitios web profesionales desde cero que reflejan la identidad de tu marca, 
+                optimizados para conversión y posicionamiento en buscadores.
+              </p>
+              
+              <div className="grid grid-cols-2 gap-4 mb-6">
+                <div className="flex items-center space-x-2">
+                  <CheckCircle className="w-5 h-5 text-emerald-600" />
+                  <span className="text-gray-600">Diseño Responsivo</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <CheckCircle className="w-5 h-5 text-emerald-600" />
+                  <span className="text-gray-600">SEO Optimizado</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <CheckCircle className="w-5 h-5 text-emerald-600" />
+                  <span className="text-gray-600">Hosting Incluido</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <CheckCircle className="w-5 h-5 text-emerald-600" />
+                  <span className="text-gray-600">Análisis de Rendimiento</span>
+                </div>
+              </div>
 
+              <div className="flex justify-between items-center">
+                <a href="#contacto" className="text-emerald-600 font-semibold flex items-center space-x-2 hover:text-emerald-700">
+                  <span>Más Información</span>
+                  <ArrowRight className="w-4 h-4" />
+                </a>
+                <span className="text-sm text-gray-500">Desde 2 semanas</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Service 2 */}
+          <div className="mb-12">
+            <div className="h-48 rounded-lg relative overflow-hidden">
+              <img 
+                src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" 
+                alt="Soporte técnico páginas web" 
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute top-4 left-4 w-12 h-12 bg-emerald-500 rounded-lg flex items-center justify-center">
+                <Shield className="w-6 h-6 text-white" />
+              </div>
+            </div>
+            <div className="bg-white p-8 rounded-lg shadow-sm -mt-8 relative z-10 mx-4">
+              <h4 className="text-2xl font-bold text-gray-900 mb-4">
+                Soporte y Mantenimiento Web
+              </h4>
+              <p className="text-gray-600 mb-6">
+                Ofrecemos soporte técnico continuo para mantener tu página web funcionando de manera óptima, 
+                con actualizaciones de seguridad, copias de respaldo y monitoreo 24/7.
+              </p>
+              
+              <div className="grid grid-cols-2 gap-4 mb-6">
+                <div className="flex items-center space-x-2">
+                  <CheckCircle className="w-5 h-5 text-emerald-600" />
+                  <span className="text-gray-600">Monitoreo 24/7</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <CheckCircle className="w-5 h-5 text-emerald-600" />
+                  <span className="text-gray-600">Copias de Seguridad</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <CheckCircle className="w-5 h-5 text-emerald-600" />
+                  <span className="text-gray-600">Actualizaciones</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <CheckCircle className="w-5 h-5 text-emerald-600" />
+                  <span className="text-gray-600">Soporte Técnico</span>
+                </div>
+              </div>
+
+              <div className="flex justify-between items-center">
+                <a href="#contacto" className="text-emerald-600 font-semibold flex items-center space-x-2 hover:text-emerald-700">
+                  <span>Más Información</span>
+                  <ArrowRight className="w-4 h-4" />
+                </a>
+                <span className="text-sm text-gray-500">Planes desde $50/mes</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Service 3 */}
+          <div className="mb-8">
+            <div className="h-48 rounded-lg relative overflow-hidden">
+              <img 
+                src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" 
+                alt="Mejora y optimización de páginas web" 
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute top-4 left-4 w-12 h-12 bg-emerald-500 rounded-lg flex items-center justify-center">
+                <TrendingUp className="w-6 h-6 text-white" />
+              </div>
+            </div>
+            <div className="bg-white p-8 rounded-lg shadow-sm -mt-8 relative z-10 mx-4">
+              <h4 className="text-2xl font-bold text-gray-900 mb-4">
+                Mejora y Optimización Web
+              </h4>
+              <p className="text-gray-600 mb-6">
+                Modernizamos y optimizamos sitios web existentes para mejorar la velocidad de carga, 
+                experiencia de usuario y posicionamiento SEO, aumentando las conversiones y el tráfico.
+              </p>
+              
+              <div className="grid grid-cols-2 gap-4 mb-6">
+                <div className="flex items-center space-x-2">
+                  <CheckCircle className="w-5 h-5 text-emerald-600" />
+                  <span className="text-gray-600">Optimización SEO</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <CheckCircle className="w-5 h-5 text-emerald-600" />
+                  <span className="text-gray-600">Velocidad de Carga</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <CheckCircle className="w-5 h-5 text-emerald-600" />
+                  <span className="text-gray-600">Diseño Moderno</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <CheckCircle className="w-5 h-5 text-emerald-600" />
+                  <span className="text-gray-600">Análisis UX</span>
+                </div>
+              </div>
+
+              <div className="flex justify-between items-center">
+                <a href="#contacto" className="text-emerald-600 font-semibold flex items-center space-x-2 hover:text-emerald-700">
+                  <span>Más Información</span>
+                  <ArrowRight className="w-4 h-4" />
+                </a>
+                <span className="text-sm text-gray-500">Desde 1 semana</span>
+              </div>
+            </div>
+          </div>
           {/* Service 2 */}
           <div className="mb-8">
             <div className="h-48 rounded-lg relative overflow-hidden">
