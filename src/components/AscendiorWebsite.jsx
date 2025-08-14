@@ -24,7 +24,7 @@ import {
 } from 'lucide-react';
 import { supabase } from '../lib/supabase';
 
-export default function AscendiorWebsite() {
+export default function ascendiorWebsite() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
@@ -89,7 +89,7 @@ export default function AscendiorWebsite() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-6">
             <div>
-              <h1 className="text-2xl font-bold text-gray-900">Ascendior</h1>
+              <h1 className="text-2xl font-bold text-gray-900">SolutZen</h1>
               <p className="text-sm text-gray-600">Software Solutions</p>
             </div>
             
@@ -177,7 +177,7 @@ export default function AscendiorWebsite() {
             </div>
             <div>
               <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-                Sobre <span className="text-emerald-600">Ascendior</span>
+                Sobre <span className="text-emerald-600">SolutZen</span>
               </h3>
               <p className="text-gray-600 mb-4">
                 Somos una empresa especializada en desarrollo de software que transforma ideas en soluciones 
@@ -499,7 +499,7 @@ export default function AscendiorWebsite() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3">
-              Beneficios de Trabajar con <span className="text-emerald-600">Ascendior</span>
+              Beneficios de Trabajar con <span className="text-emerald-600">SolutZen</span>
             </h3>
             <p className="text-gray-600 max-w-2xl mx-auto">
               Descubre cómo nuestras soluciones tecnológicas pueden transformar tu negocio y 
@@ -801,7 +801,7 @@ export default function AscendiorWebsite() {
                   </div>
                   <div>
                     <h5 className="font-semibold text-gray-900 mb-1">Email</h5>
-                    <p className="text-gray-600">ascendior@gmail.com</p>
+                    <p className="text-gray-600">SolutZen@gmail.com</p>
                   </div>
                 </div>
 
@@ -846,7 +846,7 @@ export default function AscendiorWebsite() {
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-3 gap-8">
             <div>
-              <h3 className="text-xl font-bold mb-4">Ascendior</h3>
+              <h3 className="text-xl font-bold mb-4">SolutZen</h3>
               <p className="text-gray-300 mb-6">
                 Software Solutions
               </p>
@@ -879,7 +879,7 @@ export default function AscendiorWebsite() {
           </div>
 
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-            <p>&copy; 2024 Ascendior Software Solutions. Todos los derechos reservados.</p>
+            <p>&copy; 2024 SolutZen Software Solutions. Todos los derechos reservados.</p>
           </div>
         </div>
       </footer>
